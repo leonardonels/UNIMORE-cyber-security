@@ -1,5 +1,9 @@
 # UNIMORE-cyber-security
 
+```commandline
+python3 -c 'print(int('0x2d'))'
+```
+
 ## Buffer Overflow
 ```commandline
 gcc -w -m32 -fno-stack-protector -fno-pic -no-pie -g -o
