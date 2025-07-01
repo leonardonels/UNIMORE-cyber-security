@@ -44,5 +44,8 @@ sys.stdout.buffer.write(payload)
 '--
 ```
 ```commandline
-xxx' or '1'='1
+' OR ''='
+```
+```commandline
+ORDER BY X --
 ```
